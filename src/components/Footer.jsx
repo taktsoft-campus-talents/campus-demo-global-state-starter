@@ -1,8 +1,4 @@
-import { useContext } from "react";
-import { LanguageContext } from "../context/LanguageContext";
-
 export function Footer() {
-  const { content } = useContext(LanguageContext);
   return (
     <p
       style={{
@@ -10,7 +6,7 @@ export function Footer() {
         color: "white",
       }}
     >
-      {content.footer}
+      Footer
     </p>
   );
 }
